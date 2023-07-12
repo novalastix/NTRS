@@ -4,7 +4,7 @@
 Automatically assigns user role on join.
 
 ## Commands
-`/info` - Displays bot information and status
+`/info` - Displays bot information and status  
 `/roll` - Rolls any number of dice (default 1d20)
 
 ## Admin Commands
