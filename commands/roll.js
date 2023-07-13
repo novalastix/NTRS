@@ -35,7 +35,7 @@ module.exports = {
                     output = Math.floor(Math.random() * sides) + 1;
                     total += output;
 
-                    message += " `"+output+"`";
+                    message += " `\u00A0"+output+"\u00A0`";
 
                     count++
                 }
@@ -43,7 +43,7 @@ module.exports = {
 
             if(count > 1)
             {
-                message += "\nTotal: "+total;
+                message += "\n### Total: `\u00A0"+total+'\u00A0`';
             }
 
             if(count > 100)
