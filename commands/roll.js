@@ -3,7 +3,7 @@ const {SlashCommandBuilder,EmbedBuilder} = require('discord.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('roll')
-		.setDescription('Roll a dice')
+		.setDescription('Roll Dice')
         .addStringOption(option => option.setName('custom').setDescription("Enter a custom dice roll separated by commas (e.g. '2d8,1d20'").setRequired(false)),
 	async execute(interaction) {
         const name = interaction.member.toString();
