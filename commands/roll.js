@@ -6,7 +6,7 @@ module.exports = {
 		.setDescription('Roll a dice')
         .addStringOption(option => option.setName('custom').setDescription("Enter a custom dice roll separated by commas (e.g. '2d8,1d20'").setRequired(false)),
 	async execute(interaction) {
-        const name = interaction.member.toString(); //interaction.member.nickname || interaction.member.user.username;
+        const name = interaction.member.toString();
         const input = interaction.options.getString('custom') || "1d20";
 
         let message = name + " rolled " + input + "\n#";
