@@ -4,17 +4,17 @@ const { defaultroleId } = require('../config.json');
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('info')
-		.setDescription('bot information'),
+		.setName('status')
+		.setDescription('Check Bot Status'),
 	async execute(interaction) {
         await interaction.deferReply({ ephemeral: true });
 
-		const infoEmbed = new EmbedBuilder()
+		const statusEmbed = new EmbedBuilder()
 		.setTitle('Antares')
 		.addFields(
 			{ name: 'Status', value: "<:online:1128811218342268988> Online"},
 			{ name: 'Features', value: "Automatically assigns <@&"+defaultroleId+">"},
-			{ name: 'Commands', value: '`/info`\n`/roll`',inline:true},
+			{ name: 'Commands', value: '`/roll`\n`/status`',inline:true},
 			{ name: ' Admin Commands', value: '`/broadcast`',inline:true},
 			{ name: 'Links', value: '[source](https://github.com/novalastix/NTRS) | [donate](https://ko-fi.com/novalastix)' },
 		)
@@ -22,6 +22,6 @@ module.exports = {
 		.setColor(0xFFFFFF)
 		.setTimestamp();
 
-		await interaction.editReply({embeds: [infoEmbed]});
+		await interaction.editReply({embeds: [statusEmbed]});
 	},
 };
