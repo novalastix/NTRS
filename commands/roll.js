@@ -17,6 +17,7 @@ module.exports = {
             if(input.length > 100) throw new Error('Input string cannot be too long.');
 
             let inputRaw = input.replace(/\s+/g, '');
+
             let rolls = inputRaw.split(',');
 
             for(r in rolls)
@@ -25,6 +26,8 @@ module.exports = {
                 [x,y] = roll.split('d');
                 let amount = parseInt(x);
                 let sides = parseInt(y);
+                
+                if(isNaN(amount) || isNaN(sides)) throw new Error('Dice amount and sides must be an integer');
 
                 if(amount < 1 || amount > 100) throw new Error('Dice amount must be between 1 and 100.');
 
