@@ -13,7 +13,7 @@ module.exports = {
 		.setTitle('Antares')
 		.addFields(
 			{ name: 'Status', value: "<:online:1128811218342268988> Online"},
-			{ name: 'Features', value: "Automatically assigns <@&"+defaultroleId+">"},
+			{ name: 'Features', value: "Automatically assigns default role"},
 			{ name: 'Commands', value: '`/roll`\n`/status`',inline:true},
 			{ name: ' Admin Commands', value: '`/broadcast`',inline:true},
 			{ name: 'Links', value: '[source](https://github.com/novalastix/NTRS) | [donate](https://ko-fi.com/novalastix)' },
