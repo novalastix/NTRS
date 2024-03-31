@@ -8,7 +8,7 @@ Automatically assigns user role on join.
 `/status` - Displays bot information and status
 
 ## Admin Commands
-`/broadcast` - Sends a custom embed
+`/broadcast` - Sends a custom embed  
 `/activity` - Give the bot a custom activity
 
 ## Dependencies
