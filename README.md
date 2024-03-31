@@ -9,6 +9,7 @@ Automatically assigns user role on join.
 
 ## Admin Commands
 `/broadcast` - Sends a custom embed
+`/activity` - Give the bot a custom activity
 
 ## Dependencies
 - node.js
